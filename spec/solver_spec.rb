@@ -9,7 +9,7 @@ describe Solver do
     end
 
     it 'returns the reverse string' do
-      expect(problem).to receive(:reverse).with('hello').and_return('olleh')
+      expect(problem.reverse('hello')).to eql('olleh')
     end
   end
 end
