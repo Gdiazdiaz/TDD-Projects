@@ -12,18 +12,18 @@ describe Solver do
       expect(problem.factorial(5)).to eq 120
     end
 
-    it 'raises exception' do 
+    it 'raises exception' do
       expect { problem.factorial(-5) }.to raise_exception(RuntimeError)
     end
 
-    it 'equals 1' do 
+    it 'equals 1' do
       expect(problem.factorial(0)).to eq 1
     end
 
     it 'returns the reverse string' do
       expect(problem.reverse('hello')).to eql('olleh')
     end
-    
+
     it 'returns fizzbuzz' do
       expect(problem.fizzbuzz(15)).to eql 'fizzbuzz'
     end
